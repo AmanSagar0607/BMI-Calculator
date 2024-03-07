@@ -1,0 +1,145 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #130f40;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  font-family: Arial, sans-serif;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.112);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #edf1f4;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #edf1f4;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: transparent;
+  /* Change placeholder color to white */
+  
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(150, 241, 75) !important;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3d5606;
+  color: #060606;
+}
+
+#results {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #edf1f4;
+  margin-bottom: 20px;
+}
+
+#weight-guide {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: slideIn 0.8s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#weight-guide h3 {
+  margin: 10px;
+  font-size: 16px;
+  color: #edf1f4;
+}
+
+#weight-guide p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #edf1f4;
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: 90%;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.027);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
